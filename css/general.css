@@ -43,6 +43,8 @@ spacing system (px) => 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 html {
   /* font-size: 10px; */
   font-size: 62.5%;
+
+  overflow-x: hidden;
 }
 
 body {
@@ -50,6 +52,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* Only works if there is nothing absolutely positioned ind relation to body */
+  overflow-x: hidden;
 }
 
 /**********************************/
@@ -217,6 +222,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2rem;
 }
 
 .list-icon {
